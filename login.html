@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./lib/bootstrap-validator/css/bootstrapValidator.css">
+    <link rel="stylesheet" href="./css/common.css">
+</head>
+
+<body class="body_bgc">
+    <!-- 1. container：留有15px的padding， 为了布局更美观
+      //如何去除： 使用.row这个类
+    2. col-xs-4：是什么意思？
+      //col:列
+      //xs: 表示超小屏及以上的屏生效 768以上
+      //sm: 表示小屏及以上的屏幕生效 768-992
+      //md：表中中屏及以上的屏幕生效 992-1200
+      //lg: 表示大屏的屏幕生效  1200以上 -->
+
+    <div class="container">
+        <!-- col-md-4栅格系统中站4份的位置，往右位移4份的位置 -->
+        <div class="col-md-4 col-md-offset-4">
+            <div class="panel panel-primary mt_150">
+                <div class="panel-heading">
+                    <h4 class="text-center">后台管理系统</h4>
+                </div>
+                <div class="panel-body">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="username" class="col-sm-3 control-label">用户名</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" name="username" id="username" placeholder="请输入用户名">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="col-sm-3 control-label">密码</label>
+                            <div class="col-sm-9">
+                                <input type="password" class="form-control" name="password" id="password" placeholder="请输入密码">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <!--  -->
+                            <div class="col-sm-offset-3 col-sm-6">
+                                <button type="reset" class="btn btn-default pull-left">重置</button>
+                                <button type="submit" class="btn btn-primary pull-right ">登录</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="./lib/jquery/jquery.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.js"></script>
+<script src="./lib/bootstrap-validator/js/bootstrapValidator.js"></script>
+<script src="./js/login.js"></script>
